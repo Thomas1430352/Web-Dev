@@ -1,0 +1,86 @@
+### CREATE five documents.
+POST http://localhost:3000/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Crispy Rice",
+    "time": 60,
+    "ingredients": "1 cup sushi rice,\n1 1/2 cups water,\n1/3 cup canola oil,\n3/4 tsp cooking / kosher salt"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Spam Musubi",
+    "time": 30,
+    "ingredients": "12 ounces Spam,\n1/4 cup oyster sauce,\n1/4 cup soy sauce,\n1/2 cup sugar,\nNori roasted seaweed used for sushi,\n6 cups cooked sushi rice"
+}
+
+
+### CREATE 3
+POST http://localhost:3000/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Pesto Sauce",
+    "time": 15,
+    "ingredients": "⅓ cup walnuts,\n2 large garlic cloves, roughly chopped,\n2 cups packed fresh basil leaves,\n½ teaspoon salt,\n¼ teaspoon ground black pepper,\n⅔ cup extra virgin olive oil,\n½ cup grated Parmigiano-Reggiano"
+}
+
+
+### CREATE 4
+POST http://localhost:3000/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Salsa Verde",
+    "time": 25,
+    "ingredients": "1 ½ pounds tomatillos (about 12 medium) husked and rinsed,\n1 to 2 medium jalapeños (stemmed),\n½ cup chopped white onion,\n¼ cup packed fresh cilantro leaves,\n2 tablespoons to ¼ cup lime juice,\n½ to 1 teaspoon salt, to taste,\nOptional variation: 1 to 2 diced avocados, for creamy avocado salsa verde"
+}
+
+
+### CREATE 5
+POST http://localhost:3000/recipes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Chicken Katsu",
+    "time": 25,
+    "ingredients": "4 skinless, boneless chicken breast halves - pounded to 1/2 inch thickness,\nsalt and pepper to taste,\n2 tablespoons all-purpose flour,\n1 egg, beaten,\n1 cup panko bread crumbs,\n1 cup oil for frying"
+}
+
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/recipes HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/recipes/64d3b1398146c0d744a4b95b HTTP/1.1
+
+
+### UPDATE one document's time, by ID.
+### Replace the ID in the following request with one that exists
+### and update the time:
+PUT http://localhost:3000/recipes/656eb9e0c814954fe2dfd0cb HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Crispy Rice",
+    "time": 60,
+    "ingredients": "1 cup sushi rice,\n1 1/2 cups water,\n1/3 cup canola oil,\n3/4 tsp cooking / kosher salt"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/recipes/64d3afbb0816f78a7cedf90a HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/recipes HTTP/1.1
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name= “robots” content=index, nofollow”>
+    <title>Thomas Tran</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="header-image" src="android-chrome-192x192.png" alt="favicon of website">
+            Thomas Tran
+        </h1>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./order.html">Order</a>
+    </nav>
+    <section>
+        <h2>Contact</h2>
+        <p>Please fill out information below to contact me!</p>
+        <form action="/submit_contact" method ="POST">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required autofocus placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="phone" name="phone" id="phone" required placeholder="Enter your phone #">
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" required placeholder="Enter your message to me here"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="category">Category:</label>
+                <select name="category" id="category" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Compliment Me</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Bug Report</option>
+                </select>
+
+                <div>
+                    <label>Preferred Contact Method:</label>
+                    <input type="radio" name="contactMethod" id="emailContact" value="email">
+                    <label for="emailContact"Email>Email</label>
+
+                    <input type="radio" name="contactMethod" id="phoneContact" value="phone">
+                    <label for="phoneContact">Phone</label>
+                </div>
+
+                <label>Subscribe to Newsletter:</label>
+
+                <div>
+                    <input type="checkbox" name="subscribeOption" id="option1" value="news">
+                    <label for="option1">News</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" name="subscribeOption" id="option2" value="updates">
+                    <label for="option2">Updates</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" name="subscribeOption" id="option3" value="offers">
+                    <label for="option3">Special Offers</label>
+                </div>
+            </fieldset>
+            <button type="submit">Subtmit</button>
+        </form>
+    </section>
+    <footer>
+        <p><span>&#169;</span> 2023 Thomas Tran </p>
+    </footer>
+</body>
+</html>

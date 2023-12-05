@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name= “robots” content=index, nofollow”>
+    <title>Thomas Tran</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="header-image" src="android-chrome-192x192.png" alt="favicon of website">
+            Thomas Tran
+        </h1>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./order.html">Order</a>
+    </nav>
+        <main>
+            <section>
+                <h2>Web Development Concepts</h2>
+                <nav class="local">
+                    <a href="#WebServers">Web Servers</a>
+                    <a href="#FrontendDesign">Frontend Design</a>
+                    <a href="#OptimizingImages">Optimizing Images</a>
+                    <a href="#Favicons">Favicons</a>
+                    <a href="#CascadingStyleSheets">Cascading Stylesheets</a>
+                    <a href="#Forms">Forms</a>
+                    <a href="#Express">Express</a>
+                    <a href="#JavaScript">JavaScript</a>
+                </nav>
+                <article id="WebServers">
+                    <h3>Web Servers</h3>
+                        <p>The index page is considered where most web server pages are mapped to by default. This means in real-world applications or websites, 
+                            most <strong>default home pages are index.html files</strong>. OSU's Apache engineer software server also uses index.html as the default name.
+                        </p>
+                        <p>When viewing the browser inspector <strong>network tab</strong>, the individual is able to see file extensions like HTML, CSS, and JavaScript. 
+                            Then we are also able to see information to monitor the network activity when trying to access the pages. A difference between the two is that the engineer page has more resources, 
+                            like content.js, executor.js, and favicon.ico. The browser tab also does not show a clear network response or latency as it is local and not a get request online.
+                        </p>
+                        <p>The favicon has a 200 code meaning it was successful in finding the resource and displaying it, 
+                            while main.js had a 404 code which is the code for not found, or that the main.js resource/file could not be found or displayed. 
+                            The network tab also showed a 404 code for main.css.
+                        </p>
+                        <p>The URL is https://web.engr.oregonstate.edu/~tranth7/a1-tranth7/, where the scheme is HTTPS, an encrypted version of HTTP. 
+                            The subdomain is the web and engr, and the host domain is oregonstate.edu. Finally, the resource is /~tranth7/a1-tranth7.
+                        </p>
+                </article>
+                <article id="FrontendDesign">
+                    <h3>Frontend Design</h3>
+                        <p>
+                            The idea of front-end design should be thought of as designing a user interface with the best experience and usability for the end user.
+                            This is to mean that the developer will use a good visual design and a practical design. Visual could be things like matching font, color scheme, and themes.
+                            A practical design can mean making it easy to navigate or intuitive in the buttons and interfaces so that the application's usability increases.
+                            One way a developer can interpret the usability of a website or application is by using the five "E"s known as <strong>effective, efficient, easy-to-navigate, error-free, and enjoyable.</strong>
+                        </p>
+                        <dl>
+                            <dt>Effective</dt>
+                            <dd>Determined by how well the application or design helps to accomplish the user's goals. The design should do what it is created to do and should display accurate results.</dd>
+                            <dt>Efficient</dt>
+                            <dd>Determined by if the design uses the least amount of steps to reach the end goal or solution. 
+                                The application should have the least amount of unnecessary steps to accomplish the task at hand, and the results should be shown promptly.</dd>
+                            <dt>Easy-to-Navigate</dt>
+                            <dd>Determined by how practical and intuitive the design is. The user should understand how to use the application, whether it's their first time or next time using it</dd>
+                            <dt>Error-Free</dt>
+                            <dd>Determined by how many problems occur for the user when using applications. The application should be accessible and available to the user, 
+                                and bugs should not appear when the application is being used for its intended purpose.</dd>
+                            <dt>Enjoyable</dt>
+                            <dd>Determined by how much the intended audience enjoys the product. The application should be engaging to the user and should make the user want to come back to use it. 
+                                Enjoyable can be determined by the other four "E"s, and also by design as well.
+                            </dd>
+                        </dl>
+                        <p> Then there are page layout tags, which are a type of block element in HTML used to break apart web pages or to section off different content. 
+                            The layout tags consist of these elements: header, nav, main, section, article, aside, figure, blockquote, footer, and div.
+                            The <strong>header</strong> tag is usually the banner or headline of the application, and the same across pages, where it includes things like name, publisher, logo, and slogan.
+                            The <strong>nav</strong> element is a way for users to navigate from different pages and can have multiple ways to navigate the application like search bars, menus, locations, or even links.
+                            The <strong>main</strong> element is just to section off the primary area where the content will be held, like your articles and sections.
+                            The <strong>section</strong> element is used to thematically group articles or contents that relate but aren't the same. Like a math book, has chapters with subchapters.
+                            The <strong>article</strong> section is typically going to be placed inside section tags, which are used to identify individual specific topics, and are usually headlined with a "h2".
+                            Aside elements usually have correlated information to the article and sit on the side. The <strong> figure and figcaption </strong> element are typically used like the aside element, but have media files
+                            along with "figcaption" to accompany the media. The <strong>blockquote</strong> element is for quotations that are too long for a paragraph and are usually visually different from the paragraph.
+                            The <strong>footer</strong> is usually below the tag and holds all information related to legal information, and contact information, and can have links to other related content or passages. The footer
+                            should also contain the websites owner's copyright statement, year of publication, and the owner's name. The <strong>div</strong> element is used to divide
+                            content when it does not seemingly fit in one of the other elements and usually has no style or dimensions.
+                        </p>
+                        <ol>
+                            <p>Anchors are pieces of text that marks the beginning and end of a hypertext link.</p>
+                            <li><strong>Anchors</strong> are noted with an "a" tag, and for external links include a URL in the form of "a href-"https/domain.com"", and then a  description to note where the anchor is taking the user</li>
+                            <li>An internal anchor is an element that links different parts of the same page where clicking on one jumps to a designated section of the page by using IDs in place of URLs</li>
+                            <li>The anchor can also jump from page to page by using the file names or URL in a similar fashion to  jumping to different external sites</li>    
+                            <li>An absolute anchor is one that provides a URL that contains more information than a relative URL. A benefit of a relative URL, though, is that it is more portable and convenient due to its shorter length
+                                and only shows the path to the file or the file itself, where it transfers a user from point to point within the same domain. While an absolute provides info like domain name and the complete location information of the site.
+                            </li>
+                        </ol>           
+                </article>
+                <article id="OptimizingImages">
+                    <h3>Optimizing Images</h3>
+                        <p>
+                            There are six major specifications of images for the web, which are: descriptive file name, small file size, exact dimensions, correct file format, reduced resolution, and color mode.
+                            Descriptive file names help with search engine optimization and should be descriptive yet precise to describe an image so that search engines can find it when keywords are used by users.
+                            Small file size helps to reduce the time it takes to load images or other files, and can also be used to give correct resolution files to higher-res or lower-res devices. For smaller file 
+                            sizes you can use lossy compression where it loses image data to compress a file or lossless where it compresses without lowering the visual quality. Exact dimensions are important as they 
+                            allow the image to fit in the browser or web page and can make it load better. The correct file format allows for web pages to load files, whereas JPG is usually for online photos, but there are also
+                            WebP, PNG, SVG, and GIF should be used for different file needs. Then there is reduced resolution, where the developer should provide the correct resolution to fit the user's monitors or devices,
+                            but today there are multiple resolutions, and providing multiple sizes for files is becoming the standard. Then there are color modes, where RGB is standard for PNG, JPG, SVG, WebP, and Indexed for 
+                            GIF. For line art, file formats should usually be PNG, SVG, or GIF file formats, while for photos, file formats should be JPG or WebP.
+                        </p>
+                </article>
+                <article id="Favicons">
+                    <h3>Favicons</h3>
+                        <p>
+                            Favicons are also known as favorite icons, where devices and browsers use the favicon as a way to identify and/or start-up websites and applications. Favicons are usually in the file formats of GIF,
+                            PNG, ICO, and SVG. In today's time, ICO is usually only for legacy browsers, but the more common ones are SVG or PNG files. It is usually a symbol that represents a website, app, or company and can exist
+                            as a browser tab icon, a favorite bar icon, or even a mobile app icon. It usually starts off as a symbol and gets modified from resolution to file type to be able to display on different devices and browsers.
+                        </p>
+                </article>
+                <article id="CascadingStyleSheets">
+                    <h3>Cascading Stylesheets</h3>
+                        <p>
+                            Cascading stylesheets also known as CSS, is a stylesheet language used to format and stylize files, like HTML. It allows you to define rules and specify how certain elements in HTML files should be displayed.
+                            These rules usually use selectors that encompass targeted elements of HTML and declare properties for those elements. CSS is helpful in that it also includes other aspects like pseudo-classes and other properties
+                            that allow the control of text formatting, colors, layout, positioning of objects, and much more! This makes incorporating stylesheets in websites and applications helpful by adding things like consistent design, 
+                            enhanced user experience, easy maintenance and changeability, accessibility, and responsive design, but can also improve other factors of the website and application as well.
+                        </p>
+                        <p> 
+                            Five ways a user can incorporate style in CSS are External CSS, inline styles, embedded styles, styles in JavaScript templates, and JavaScript manipulating of the DOM. External Stylesheets consist of using external CSS
+                            files and linking them using a global template, which allows for consistent style across multiple pages, but you can also use component-specific style sheets that target certain elements of the file. Inline styles,
+                            embedded styles, styles in JavaScript templates, and JavaScript manipulating of the DOM are all a part of the embedded styles. Inline styles can be applied directly to individual HTML elements using the 'style' attribute.
+                            Embedded styles can be defined with a style tag in HTML. Styles in JavaScript templates define styles using modern frameworks like React. Then JavaScript manipulates the DOM as JavaScript changes the document object 
+                            model to style elements.
+                        </p>                        
+                </article>
+                <article id="Forms">
+                    <h3>Forms</h3>
+                    <p>
+                        There are 6 major goals in accessible forms. The first one is to provide clear instructions in the form and labels, so users can fill it out as correctly and effectively as possible. The second is to let users understand why they are 
+                        filling out the data and which fields are required. The third is to set the first field to autofocus so the user can start typing without using their mouse, in case they do not have a mouse available they can rely solely on the keyboard. 
+                        The fourth is to ensure form control can be filled in using the keyboard, and this goes in hand with the third point. Fifth is to make sure tab indexing is enabled to make sure there is an order that can be made out to be filled and 
+                        goes in hand with the third and fourth goals. Sixth is to ensure validation messages are screen readable, so users can understand what they wrote, and the information was recorded correctly.   
+                    </p>
+                    <p>
+                        Then there are a couple of major tags that come in handy when making forms and other web applications. The first tag is the form tag, which is used to create a form within an HTML document, where its attributes are 'action' and 'method.'
+                        Then there are the fieldset and legend tags, which are used to group form controls into logical sections and make forms more accessible by adding structures to forms. The next tag is the label tag which has the 'for' attribute
+                        and it is paired with the form controls to provide a label for users to understand the reason for the purpose of the data entry. The input tag has the attributes 'type', 'name', and the optional 'required', which it allows users to input data.
+                        The input type can be defined as different tags as well, like emails with the 'pattern' attribute, checkbox with the 'name' and 'value' attribute, and radio with 'name', and 'value'. There are other tags like, select and textarea with the 'name attribute'
+                        that changes the way data entry can be entered. Finally, the button tag is usually used to submit the data.                   
+                     </p>
+                    <p>
+                        There are also major form style recommendations to improve web application usability. One way is to style the fieldset and legend to improve readability and understanding for users. The developer can also display labels above form controls to define the data entry.
+                        Another way is to optimize buttons or text input areas for touchscreen users to enhance user interaction. You can also enhance user interaction by using a focus pseudo-class or required tag. Other ways include styling checkboxes, radio buttons, style-disabled form 
+                        controls, and select and option elements. All of these techniques help to create a more user-friendly and visually appealing form that is easier to read and interact with for different users.                
+                        </p>
+
+                </article>
+                
+                <article id="Express">
+                    <h3>Node, Node Package Manager, and Express</h3>
+                    <p>
+                        Three technology that can improve the web development experience is Node.js. Node.js enables full-stack JavaScript development and allows developers to use JavaScript for both client and server-side code. It also has a big ecosystem of modules and libraries and does well with scalability.
+                        Node Package Manager or npm is the default package manager for Node.js and is a command-line tool that allows developers to install and manage Node.js packages and libraries with ease. It gives the developer easy access to version control and distribution by terminal commands. 
+                        Express.js is a web application framework for Node.js that make the development of tasks like routing, handling request, integrations, and much more, more flexible and efficient. By using all three technologies together, a developer can streamline the processes and workflow of deploying
+                        web application with easier scalability and efficiency.                   
+                     </p>
+                </article>
+
+                <article id="JavaScript">
+                    <h3>JavaScript</h3>
+                        <p>
+                            JavaScript is a high-level programming language that is known for its use in web development. It allows developers to add interactive and dynamic elements to websites and is used modernly for both client and server sides.
+                            The main data types of JavaScript are numbers, boolean values, strings, symbols, objects, and special values like null or undefined. In JavaScript, data is retrieved, collected, and used in objects, arrays, and JSON (JavaScript Object Notation).
+                            Objects are used to group related data and functions into a single unit. Arrays are used to store and reorganize collections of data and use an index starting at 0. JSON is a data interchange format that is usually used to transfer data between
+                            servers and web applications. In JavaScript, developers also use conditionals and loops, where conditionals are used to make decisions in codes to decide whether certain conditions are true or false using "if", "else if", and "else" statements. Loops, on 
+                            the other hand, are used to repeatedly execute a block of code until the condition is met and usually use a "for" or "while" statement. JavaScript is also one of the languages known for being used in 
+                            object-oriented programming, where objects are instances of classes that are defined by the developer and are expected to have an identity, state, and behavior. It means to use name-value pairs for properties of an object and objects are distinct,
+                             where each object has its own properties and can have functions declared to each. Functions in JavaScript are "first-class" values, meaning we can give variable functions, define functions that use other functions are arguments, and define functions
+                             that return functions.
+                        </p>                      
+                </article>
+            </section>
+            <footer>
+                <p><span>&#169;</span> 2023 Thomas Tran </p>
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name= “robots” content=index, nofollow”>
+    <title>Thomas Tran</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="header-image" src="android-chrome-192x192.png" alt="favicon of website">
+            Thomas Tran
+        </h1>
+    </header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./order.html">Order</a>
+    </nav>
+    <section>
+        <h2>Buy My Goods</h2>
+        <article>
+            <p>Welcome to the order page! Here, you can select products from our list and place an order.</p>
+            <form action="/submit_order" method="POST">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label for="name" class="required">Name:</label>
+                    <input type="text" name="name" id="name" required autofocus placeholder="Enter your name">
+
+                    <label for="email" class="required">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+                    <label for="address" class="required">Address:</label>
+                    <input type="text" name="address" id="address" required placeholder="Enter your address">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Product Selection</legend>
+                    <table>
+                        <!-- Manually construct the table with four columns and six rows -->
+                        <caption>Products</caption>
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Select</th> <!-- New column for radio buttons -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AGYM</td>
+                                <td>Spinning Cat Scratcher Ball</td>
+                                <td>$52.99</td>
+                                <td>
+                                    <input type="radio" name="selectedProduct" value="Spinning Cat Scratcher Ball">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jasonwell</td>
+                                <td>Foldable Dog Pool</td>
+                                <td>$27.25</td>
+                                <td>
+                                    <input type="radio" name="selectedProduct" value="Foldable Dog Pool">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Expawlorer</td>
+                                <td>Dog Fence Window</td>
+                                <td>$30.50</td>
+                                <td>
+                                    <input type="radio" name="selectedProduct" value="Dog Fence Window">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lollimeow</td>
+                                <td>Capsule Pet Travel Backpack</td>
+                                <td>$59.00</td>
+                                <td>
+                                    <input type="radio" name="selectedProduct" value="Capsule Pet Travel Backpack">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Drool'd</td>
+                                <td>Cat Hamster Wheel</td>
+                                <td>$349.75</td>
+                                <td>
+                                    <input type="radio" name="selectedProduct" value="Cat Hamster Wheel">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <label class="required">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" placeholder="Enter quantity" required>
+                    
+                    <div>
+                    <label>Delivery Instructions:</label>
+                    <div class="centered-textarea">
+                        <textarea name="deliveryInstructions" id="deliveryInstructions" placeholder="Please enter optional delivery Instructions"></textarea>
+                    </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p><span>&#169;</span> 2023 Thomas Tran </p>
+    </footer>
+</body>
+</html>
